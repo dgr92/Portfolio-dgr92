@@ -1,0 +1,12 @@
+
+.project-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.project-list li {
+  list-style-type: none;
+}

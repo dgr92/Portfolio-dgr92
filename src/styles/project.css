@@ -1,0 +1,62 @@
+.project {
+  border: 1px solid #000;
+  border-radius: 25px;
+  list-style-type: none;
+  width: 350px;
+  height: 500px;
+  margin: 0;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  height: 100%;
+}
+
+.project-content > a {
+  margin: 0 -30px;
+  height: 30%;
+}
+
+.project-content > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;  
+  border-radius: 25px 25px 0 0;
+  margin: 0 -20px;
+}
+
+.description {
+  height: 100%;
+}
+
+.description h3 {
+  margin: 0;
+}
+
+.description > p {
+  text-align: justify;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons img {
+  fill: #fff !important;
+  width: 2em;
+  height: 2em;
+}
+
+.project-stack {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  height: 20%;
+}
+
+.project-stack img {
+  height: 2em;
+}

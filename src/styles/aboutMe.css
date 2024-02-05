@@ -1,0 +1,31 @@
+.about-me {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.photo-name img {
+  border-radius: 100%;
+  width: 400px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.external-links {
+  display: flex;
+  gap: 20px;
+}
+
+.external-links img {
+  width: 30px;
+}
