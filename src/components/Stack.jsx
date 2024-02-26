@@ -1,7 +1,7 @@
 import '../styles/stack.css';
 
 export const Stack = () => {
-  const stack = ['html', 'css', 'javascript', 'mysql', 'nodejs', 'express', 'react', 'git', 'vite', 'postman'];
+  const stack = ['html', 'css', 'javascript', 'react', 'nodejs', 'express', 'mysql', 'firebase', 'git', 'vite', 'postman'];
 
   return (
     <div className="stack">
@@ -10,7 +10,7 @@ export const Stack = () => {
         {stack.map((tech) => {
           return (
             <li key={tech}>
-              <img className="logo" src={`/resources/images/logos/${tech}.svg`} alt={`Logo de ${tech}`} />
+              <img className="logo" src={`/resources/images/logos/${tech}.svg`} alt={`Logo de ${tech}`} title={tech.toUpperCase()} />
             </li>
           );
         })}

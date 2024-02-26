@@ -1,6 +1,3 @@
-import Zoom from '@material-ui/core/Zoom';
-import { Tooltip } from '@material-ui/core';
-
 import '../styles/aboutMe.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -23,19 +20,13 @@ export const AboutMe = ({ userData }) => {
           </a>
           <div className="external-links">
             <a href="https://github.com/dgr92" target="_blank" rel="noreferrer">
-              <Tooltip TransitionComponent={Zoom} title="GitHub">
-                <img src="/resources/images/icons/github.svg" alt="Logo GitHub" />
-              </Tooltip>
+              <img src="/resources/images/icons/github.svg" alt="Logo GitHub" />
             </a>
             <a href="mailto:davidgreq92@gmail.com" target="_blank" rel="noreferrer">
-              <Tooltip TransitionComponent={Zoom} title="Send e-mail">
-                <img src="/resources/images/icons/email.svg" alt="Logo Email" />
-              </Tooltip>
+              <img src="/resources/images/icons/email.svg" alt="Logo Email" />
             </a>
             <a href="https://www.linkedin.com/in/david-gr/" target="_blank" rel="noreferrer">
-              <Tooltip TransitionComponent={Zoom} title="LinkedIn">
-                <img src="/resources/images/icons/linkedin.svg" alt="Logo LinkedIn" />
-              </Tooltip>
+              <img src="/resources/images/icons/linkedin.svg" alt="Logo LinkedIn" />
             </a>
           </div>
         </div>
