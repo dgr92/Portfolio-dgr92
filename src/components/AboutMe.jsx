@@ -22,7 +22,7 @@ export const AboutMe = ({ userData }) => {
         </p>
         <div className="links">
           <a
-            href="public/resources/images/files/CV-David-Gracia-Requena.pdf"
+            href="/resources/files/CV-David-Gracia-Requena.pdf"
             className="cv"
             download
           >
