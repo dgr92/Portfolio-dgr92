@@ -10,7 +10,7 @@
   width: 400px;
 }
 
-.description {
+.about-me .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,11 +21,31 @@
   justify-content: space-between;
 }
 
+.cv {
+  color: #e3e3e3;
+  padding: 5px 10px;
+  border: 1px solid #3a3d3f;
+  border-radius: 7px;
+  align-self: center;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.75);
+  transition: all 200ms ease-in-out;
+}
+
+.cv:hover {
+  background-color: #3a3d3f;
+}
+
+.cv:active {
+  box-shadow: none;
+  background-color: #242627;
+}
+
 .external-links {
   display: flex;
   gap: 20px;
 }
 
 .external-links img {
+  display: block;
   width: 30px;
 }

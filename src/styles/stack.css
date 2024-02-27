@@ -2,21 +2,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 30vh;
+  height: 25vh;
 }
 
 .techs {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly ;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.techs > li {
+.technology {
+  flex-direction: column;
   list-style-type: none;
+  width: 100%;
+  height: 100%;
 }
 
-.techs img {
-  width: 75px;
-  fill:white;
+.technology > a > img {
+  height: 60%;
+  max-width: 85%;
+  fill: white;
+  align-self: center;
+  transition: 0.5s;
+}
+
+.technology > a > img:hover {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.3);
 }
