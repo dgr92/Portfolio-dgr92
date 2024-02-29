@@ -1,16 +1,19 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useContext } from 'react';
 
 import { AboutMe } from '../components/AboutMe';
 import { Stack } from '../components/Stack';
 import { ProjectList } from '../components/ProjectList';
+import { Loading } from '../components/Loading';
 
 import axios from 'axios';
 
 import '../styles/homePage.css';
+import { ProfileContext } from '../context/ProfileContext';
+import { ReturnTopButton } from '../components/ReturnTopButton';
 
 export const HomePage = () => {
-  const [userData, setUserData] = useState([]);
-  const [buttonReturnTopVisible, setButtonReturnTopVisible] = useState(false);
+  const { profileData, setProfileData, scrollToTop, toggleVisibility } =
+    useContext(ProfileContext);
 
   useEffect(() => {
     // Fetch a la informacion de GitHub
@@ -24,7 +27,7 @@ export const HomePage = () => {
             },
           }
         );
-        setUserData(response.data.reverse());
+        setProfileData(response.data.reverse());
       } catch (error) {
         console.error('Error buscando repositorios en GitHub:', error);
       }
@@ -32,46 +35,41 @@ export const HomePage = () => {
 
     fetchData();
 
+    const scrollDown = (e) => {
+      if (window.scrollY < 20 && e.deltaY > 0) {
+        scrollToProjects();
+      } else if (window.scrollY > 20 && e.deltaY < 0) {
+        scrollToTop('smooth');
+      }
+    };
+
     //  Escuchar eventos de scroll y actualizar visibilidad del botón
+    window.addEventListener('wheel', scrollDown);
     window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
-  }, [setUserData]);
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+      window.removeEventListener('wheel', scrollDown);
+    };
+  }, [setProfileData, scrollToTop, toggleVisibility]);
 
-  // Visibilidad del botón para volver arriba de la página
-  const toggleVisibility = () => {
-    if (window.scrollY > 20) {
-      setButtonReturnTopVisible(true);
-    } else {
-      setButtonReturnTopVisible(false);
-    }
-  };
-
-  // Volver arriba
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Ir a proyectos al hacer scroll
+  const scrollToProjects = () => {
+    window.scrollTo({ top: 1000, behavior: 'smooth' });
   };
 
   return (
     <>
-      {userData.length === 0 ? (
-        <p>cargando...</p>
+      {profileData.length === 0 ? (
+        <Loading />
       ) : (
         <>
-          <div className='main-screen'>
-            <AboutMe userData={userData} />
+          <style>{`body { overflow: ${'hidden'}; }`}</style>
+          <div className="main-screen">
+            <AboutMe userData={profileData} />
             <Stack />
           </div>
-          <ProjectList userData={userData} />
-          <div className="button-return-top">
-            {buttonReturnTopVisible && (
-              <a className="go-top" onClick={scrollToTop}>
-                <img
-                  src="/resources/images/icons/arrow_upward.svg"
-                  alt="Volver arriba"
-                />
-              </a>
-            )}
-          </div>
+          <ProjectList userData={profileData} />
+          <ReturnTopButton />
         </>
       )}
     </>

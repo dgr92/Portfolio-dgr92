@@ -8,10 +8,12 @@ export const AboutMe = ({ userData }) => {
     <section className="about-me">
       <div className="photo-name">
         <img src={userData[0].owner.avatar_url} alt="Imagen David" />
-        <h1>Portfolio David Graciá</h1>
       </div>
       <div className="description">
-        <p>Programador Web Full Stack</p>
+        <div className="name-job">
+          <h1 className="animated-text">Hola, soy David Graciá</h1>
+          <h2 className="animated-text">Desarrollador Full Stack</h2>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
           tenetur rem! Assumenda minima, cumque corporis nulla delectus optio

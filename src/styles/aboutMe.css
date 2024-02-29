@@ -1,24 +1,99 @@
 .about-me {
-  height: 70vh;
+  height: 75vh;
   display: flex;
   align-items: center;
+  justify-content: right;
   gap: 50px;
 }
 
+.photo-name {
+}
+
 .photo-name img {
-  border-radius: 100%;
+  position: relative;
+  border-radius: 50%;
   width: 400px;
+}
+
+.name-job {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.name-job h1 {
+  font-size: 5em;
+  margin-bottom: 15px;
+  animation: texth1 1.5s steps(35, end) backwards;
+}
+
+/* Animación escritura Nombre */
+@keyframes texth1 {
+  0% {
+    width: 0;
+    border-right: 0.15em solid rgb(255, 255, 255);
+  }
+  99% {
+    width: 99%;
+    border-right: 0.15em solid rgb(255, 255, 255);
+  }
+
+  100% {
+    width: 100%;
+    border-right: 0.15em solid rgba(255, 255, 255, 0);
+  }
+}
+
+.name-job h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: texth2 2s steps(35, end) 1s backwards;
+}
+
+/* Animación escritura Puesto */
+@keyframes texth2 {
+  0% {
+    width: 0;
+    border-right: 0.15em solid rgb(255, 255, 255);
+  }
+
+  64% {
+    width: 64%;
+    border-right: 0.15em solid rgb(255, 255, 255);
+  }
+
+  65% {
+    width: 65%;
+    border-right: 0.15em solid rgba(255, 255, 255, 0);
+  }
+}
+
+.animated-text {
+  align-self: unsafe;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .about-me .description {
   display: flex;
+  width: 55vw;
+  justify-self: end;
   flex-direction: column;
   justify-content: center;
+}
+
+.about-me .description > p {
+  font-size: 1.2em;
+  line-height: 1.5;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .cv {
@@ -48,4 +123,11 @@
 .external-links img {
   display: block;
   width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.external-links img:hover {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.15);
 }

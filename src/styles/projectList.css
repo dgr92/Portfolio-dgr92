@@ -1,12 +1,44 @@
+.project-list {
+  height: 100vh;
+  margin-top: 110px;
+}
+
+.project-list > h2 {
+  font-size: 3em;
+  margin-bottom: 60px;
+}
 
 .project-list ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: space-evenly;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 .project-list li {
   list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.all-projects {
+  font-size: 1.3em;
+  color: #e3e3e3;
+  background-color: #242424;
+  padding: 15px 30px;
+  border: 1px solid #3a3d3f;
+  border-radius: 7px;
+  align-self: center;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.75);
+  transition: all 200ms ease-in-out;
+}
+
+.all-projects:hover {
+  background-color: #3a3d3f;
+}
+
+.all-projects:active {
+  box-shadow: none;
+  background-color: #242627;
 }

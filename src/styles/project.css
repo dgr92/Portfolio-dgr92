@@ -38,6 +38,8 @@
   height: 65%;
   justify-content: flex-start;
   margin: 20px 0;
+  font-size: 1.08em;
+  line-height: 1.2;
 }
 
 .description h3 {

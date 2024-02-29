@@ -4,7 +4,11 @@
   align-items: center;
   height: 25vh;
 }
-
+.stack h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin: 0;
+}
 .techs {
   display: flex;
   height: 100%;
