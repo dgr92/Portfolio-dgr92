@@ -1,3 +1,12 @@
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes slideInFromBottom {
   0% {
     transform: translateY(100%);
@@ -19,13 +28,14 @@
 .full-project-list {
   height: 100vh;
   margin-left: 13px;
-  animation: slideInFromBottom 1s ease-in-out;
 }
 
 .full-project-list > h2 {
   font-size: 3em;
   margin-bottom: 60px;
   margin-top: 20px;
+  animation: slideInFromTop 1s ease-in-out;
+
 }
 
 .full-project-list ul {
@@ -35,6 +45,7 @@
   justify-content: space-evenly;
   margin-bottom: 50px;
   padding: 0;
+  animation: slideInFromBottom 1s ease-in-out;
 }
 
 .full-project-list li {

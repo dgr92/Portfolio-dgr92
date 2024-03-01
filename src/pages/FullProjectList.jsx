@@ -15,6 +15,7 @@ export const FullProjectList = () => {
   }, [setButtonReturnTopVisible]);
 
   scrollToTop('auto');
+
   if (profileData.length === 0) {
     return <Navigate to="/" />;
   }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+
 .about-me {
   height: 75vh;
   display: flex;
@@ -7,12 +9,28 @@
 }
 
 .photo-name {
+  animation: slideInImg 1s ease-in-out;
+}
+
+@keyframes slideInImg {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .photo-name img {
   position: relative;
   border-radius: 50%;
   width: 400px;
+  box-shadow: 10px 10px 25px -10px rgba(0, 0, 0, 0.75);
 }
 
 .name-job {
@@ -24,50 +42,15 @@
 }
 
 .name-job h1 {
+  font-family: Montserrat, sans-serif;
   font-size: 5em;
   margin-bottom: 15px;
-  animation: texth1 1.5s steps(35, end) backwards;
-}
-
-/* Animación escritura Nombre */
-@keyframes texth1 {
-  0% {
-    width: 0;
-    border-right: 0.15em solid rgb(255, 255, 255);
-  }
-  99% {
-    width: 99%;
-    border-right: 0.15em solid rgb(255, 255, 255);
-  }
-
-  100% {
-    width: 100%;
-    border-right: 0.15em solid rgba(255, 255, 255, 0);
-  }
 }
 
 .name-job h2 {
+  font-family: Antonio, sans-serif;
   font-size: 3em;
   margin-bottom: 20px;
-  animation: texth2 2s steps(35, end) 1s backwards;
-}
-
-/* Animación escritura Puesto */
-@keyframes texth2 {
-  0% {
-    width: 0;
-    border-right: 0.15em solid rgb(255, 255, 255);
-  }
-
-  64% {
-    width: 64%;
-    border-right: 0.15em solid rgb(255, 255, 255);
-  }
-
-  65% {
-    width: 65%;
-    border-right: 0.15em solid rgba(255, 255, 255, 0);
-  }
 }
 
 .animated-text {

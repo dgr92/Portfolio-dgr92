@@ -11,16 +11,20 @@ export const AboutMe = ({ userData }) => {
       </div>
       <div className="description">
         <div className="name-job">
-          <h1 className="animated-text">Hola, soy David Graciá</h1>
+          <h1 className="animated-text">David Graciá Requena</h1>
           <h2 className="animated-text">Desarrollador Full Stack</h2>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
-          tenetur rem! Assumenda minima, cumque corporis nulla delectus optio
-          sit ipsa eligendi. Minus aliquam animi numquam doloremque ratione.
-          Praesentium hic odit atque placeat velit tenetur ad adipisci
-          voluptates! Repellat obcaecati blanditiis doloremque beatae recusandae
-          suscipit ratione distinctio. Ipsum hic voluptates accusamus.
+          Apasionado de la tecnología, he trabajado con diversas tecnologías
+          desarrollando tanto en el front-end como en el back-end lo que me
+          permite tener una visión completa dentro de cualquier proyecto. Mi
+          bagaje profesional ha hecho que pueda desarrollar habilidades
+          comunicativas para trabajar con el resto del equipo y con el cliente.
+          Habituado en el trabajo bajo plazos, poseo habilidades en la gestión
+          de incidencias. Así como, la orientación a la satisfacción y atención
+          al cliente. Actualmente estoy buscando una oportunidad profesional que
+          me permita seguir creciendo, pudiendo perfeccionar mis aptitudes como
+          full stack developer.
         </p>
         <div className="links">
           <a
