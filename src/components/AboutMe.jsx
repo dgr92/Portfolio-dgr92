@@ -1,4 +1,5 @@
 import { Tooltip } from 'react-tooltip';
+import { ScrollProjects } from './ScrollProjects';
 
 import '../styles/aboutMe.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -11,8 +12,8 @@ export const AboutMe = ({ userData }) => {
       </div>
       <div className="description">
         <div className="name-job">
-          <h1 className="animated-text">David Graciá Requena</h1>
-          <h2 className="animated-text">Desarrollador Full Stack</h2>
+          <h1 className="name">David Graciá Requena</h1>
+          <h2 className="job">Desarrollador Full Stack</h2>
         </div>
         <p>
           Apasionado de la tecnología, he trabajado con diversas tecnologías
@@ -74,6 +75,7 @@ export const AboutMe = ({ userData }) => {
             </Tooltip>
           </div>
         </div>
+        <ScrollProjects />
       </div>
     </section>
   );

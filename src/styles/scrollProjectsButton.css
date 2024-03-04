@@ -1,0 +1,26 @@
+.scroll-projects {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #e3e3e3;
+  padding: 5px 10px;
+  border: 1px solid #3a3d3f;
+  border-radius: 7px;
+  align-self: center;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.75);
+  transition: all 200ms ease-in-out;
+}
+
+.scroll-projects:hover {
+  background-color: #4b4f52;
+}
+
+.scroll-projects:active {
+  box-shadow: none;
+  background-color: #1e1f20;
+}
+
+.scroll-projects > img {
+  width: 2em;
+  transform: rotate(180deg);
+}

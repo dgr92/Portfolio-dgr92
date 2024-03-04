@@ -5,6 +5,7 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
   user-select: none;
+  text-shadow: 1px 1px 10px black;
   -webkit-user-select: none;
 }
 

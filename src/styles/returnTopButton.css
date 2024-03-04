@@ -7,6 +7,17 @@
   }
 }
 
+@keyframes slideToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+}
+
 .go-top {
   cursor: pointer;
   width: 50px;
@@ -17,6 +28,8 @@
   right: 30px;
   opacity: 1;
   animation: slideFromRight 1s ease-in-out;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+
 }
 
 .hidden {

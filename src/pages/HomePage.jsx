@@ -4,12 +4,12 @@ import { AboutMe } from '../components/AboutMe';
 import { Stack } from '../components/Stack';
 import { ProjectList } from '../components/ProjectList';
 import { Loading } from '../components/Loading';
+import { ReturnTopButton } from '../components/ReturnTopButton';
+import { ProfileContext } from '../context/ProfileContext';
 
 import axios from 'axios';
 
 import '../styles/homePage.css';
-import { ProfileContext } from '../context/ProfileContext';
-import { ReturnTopButton } from '../components/ReturnTopButton';
 
 export const HomePage = () => {
   const { profileData, setProfileData, scrollToTop, toggleVisibility } =
@@ -35,9 +35,15 @@ export const HomePage = () => {
 
     fetchData();
 
+    // Bajar automaticamente a la lista de proyectos al hacer scroll, y volver a la sección principal
     const scrollDown = (e) => {
-      if (window.scrollY < 20 && e.deltaY > 0) {
-        scrollToProjects();
+      const projectList = document.querySelector('.project-list');
+      if (!projectList) return;
+      const projectListPosition =
+        projectList.getBoundingClientRect().top + window.scrollY;
+
+      if (window.scrollY < projectListPosition && e.deltaY > 0) {
+        window.scrollTo({ top: projectListPosition, behavior: 'smooth' });
       } else if (window.scrollY > 20 && e.deltaY < 0) {
         scrollToTop('smooth');
       }
@@ -51,11 +57,6 @@ export const HomePage = () => {
       window.removeEventListener('wheel', scrollDown);
     };
   }, [setProfileData, scrollToTop, toggleVisibility]);
-
-  // Ir a proyectos al hacer scroll
-  const scrollToProjects = () => {
-    window.scrollTo({ top: 1000, behavior: 'smooth' });
-  };
 
   return (
     <>

@@ -1,5 +1,5 @@
-import { Project } from './Project';
 import { Link } from 'react-router-dom';
+import { Project } from './Project';
 
 import '../styles/projectList.css';
 

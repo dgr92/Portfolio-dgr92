@@ -1,10 +1,10 @@
 import { useContext, useEffect } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import { Project } from '../components/Project';
-import { ReturnTopButton } from '../components/ReturnTopButton';
 import { ProfileContext } from '../context/ProfileContext';
 
 import '../styles/fullProjectListStyles.css';
+import { ReturnTopButton } from '../components/ReturnTopButton';
 
 export const FullProjectList = () => {
   const { profileData, scrollToTop, setButtonReturnTopVisible } =
@@ -38,6 +38,7 @@ export const FullProjectList = () => {
           ))}
         </ul>
       </div>
+      <ReturnTopButton />
       <Link className="back" to="/" onClick={handleBack}>
         <img
           src="/resources/images/icons/arrow_upward.svg"
@@ -45,7 +46,6 @@ export const FullProjectList = () => {
         />
         <p>Volver</p>
       </Link>
-      <ReturnTopButton />
     </section>
   );
 };

@@ -1,11 +1,11 @@
 .project-list {
   height: 100vh;
-  margin-top: 110px;
 }
 
 .project-list > h2 {
   font-size: 3em;
-  margin-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .project-list ul {
@@ -40,5 +40,5 @@
 
 .all-projects:active {
   box-shadow: none;
-  background-color: #242627;
+  background-color: #1e1f20;
 }

@@ -9,7 +9,7 @@ export const Project = ({ repo }) => {
   const stack = repo.topics.reverse();
 
   return (
-    <div className="project">
+    <article className="project">
       <div className="project-content">
         {repo.homepage ? (
           <a href={repo.homepage} target="_blank" rel="noreferrer">
@@ -86,6 +86,6 @@ export const Project = ({ repo }) => {
           })}
         </div>
       </div>
-    </div>
+    </article>
   );
 };

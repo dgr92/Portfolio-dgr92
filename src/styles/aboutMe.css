@@ -8,10 +8,6 @@
   gap: 50px;
 }
 
-.photo-name {
-  animation: slideInImg 1s ease-in-out;
-}
-
 @keyframes slideInImg {
   0% {
     transform: translateX(-200%);
@@ -26,7 +22,14 @@
   }
 }
 
-.photo-name img {
+.photo-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  animation: slideInImg 1s ease-in-out;
+}
+
+.photo-name > img {
   position: relative;
   border-radius: 50%;
   width: 400px;
@@ -53,9 +56,8 @@
   margin-bottom: 20px;
 }
 
-.animated-text {
-  align-self: unsafe;
-  overflow: hidden;
+.name,
+.job {
   margin: 0;
   padding: 0;
 }
@@ -66,6 +68,11 @@
   justify-self: end;
   flex-direction: column;
   justify-content: center;
+}
+
+.description > :last-child {
+  align-self: flex-end;
+  margin-top: 25px;
 }
 
 .about-me .description > p {
@@ -95,7 +102,7 @@
 
 .cv:active {
   box-shadow: none;
-  background-color: #242627;
+  background-color: #1e1f20;
 }
 
 .external-links {
