@@ -1,5 +1,5 @@
 .scroll-projects {
-  display: flex;
+  display: none;
   align-items: center;
   cursor: pointer;
   color: #e3e3e3;

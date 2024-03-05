@@ -29,7 +29,6 @@
   opacity: 1;
   animation: slideFromRight 1s ease-in-out;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-
 }
 
 .hidden {
@@ -49,4 +48,16 @@
 
 .go-top > img:active {
   background-color: #1e1f20;
+}
+
+/* Media query para pantallas 2K (2560x1440) y mayores */
+@media only screen and (min-width: 2560px) {
+  .go-top {
+    bottom: 55px;
+    right: 50px;
+  }
+
+  .go-top > img {
+    width: 60px;
+  }
 }

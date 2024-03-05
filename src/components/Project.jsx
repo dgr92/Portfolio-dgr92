@@ -36,7 +36,6 @@ export const Project = ({ repo }) => {
           <a
             className="github-button"
             href={repo.html_url}
-            target="_blank"
             rel="noreferrer"
           >
             <img src="/resources/images/icons/github.svg" alt="Logo GitHub" />
@@ -45,7 +44,6 @@ export const Project = ({ repo }) => {
           <a
             className="readme-button"
             href={`${repo.html_url}?tab=readme-ov-file#readme`}
-            target="_blank"
             rel="noreferrer"
           >
             <img src="/resources/images/icons/readme.svg" alt="Logo readme" />
@@ -55,7 +53,6 @@ export const Project = ({ repo }) => {
             <a
               className="deploy-button"
               href={repo.homepage}
-              target="_blank"
               rel="noreferrer"
             >
               <img src="/resources/images/icons/deploy.svg" alt="Logo deploy" />

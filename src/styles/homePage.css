@@ -1,14 +1,17 @@
 .loading-screen {
   display: flex;
   height: 100vh;
+  margin: auto;
 }
 
 .loading-screen > img {
   margin: auto;
-  max-width: 70px;
+  max-width: 5%;
 }
 
 .main-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
 }
-

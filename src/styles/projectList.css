@@ -1,19 +1,23 @@
 .project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
 }
 
 .project-list > h2 {
+  margin: 0;
   font-size: 3em;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .project-list ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 100px;
   justify-content: space-evenly;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -22,6 +26,10 @@
   margin-bottom: 30px;
 }
 
+.project-list > div {
+  display: flex;
+  flex-direction: column;
+}
 .all-projects {
   font-size: 1.3em;
   color: #e3e3e3;
@@ -41,4 +49,63 @@
 .all-projects:active {
   box-shadow: none;
   background-color: #1e1f20;
+}
+
+/* Media query para pantallas 2K (2560x1440) */
+@media only screen and (min-width: 2560px) {
+  .project-list ul {
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+}
+
+/* Media query para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .project-list h2 {
+    display: none;
+  }
+  .project-list ul {
+    display: none;
+  }
+
+  .project-list > div {
+    display: flex;
+    position: absolute;
+    right: 16.5vw;
+    top: 49vh;
+    width: calc(45vw - 50%);
+  }
+
+  .all-projects {
+    position: absolute;
+    left: -95px;
+    width: 150px;
+    padding: 10px 15px;
+  }
+}
+
+/* Media query para pantallas móviles */
+@media only screen and (max-width: 767px) {
+  .project-list h2 {
+    display: none;
+  }
+  .project-list ul {
+    display: none;
+  }
+
+  .project-list > div {
+    display: flex;
+    position: absolute;
+    top: 38vh;
+    right: 0.5vw;
+    width: calc(80vw - 50%);
+  }
+
+  .all-projects {
+    position: absolute;
+    width: 100px;
+    padding: 8px 15px;
+    font-size: 1em;
+    text-align: center;
+  }
 }

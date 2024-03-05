@@ -10,21 +10,23 @@ export const ProjectList = ({ userData }) => {
   return (
     <section className="project-list">
       <h2>Últimos proyectos</h2>
-      <ul>
-        {userData.map((repo) => {
-          if (showingProjects > 0) {
-            showingProjects--;
-            return (
-              <li className="a" key={repo.id}>
-                <Project repo={repo} />
-              </li>
-            );
-          }
-        })}
-      </ul>
-      <Link className="all-projects" to="/projects">
-        Más proyectos
-      </Link>
+      <div>
+        <ul>
+          {userData.map((repo) => {
+            if (showingProjects > 0) {
+              showingProjects--;
+              return (
+                <li className="a" key={repo.id}>
+                  <Project repo={repo} />
+                </li>
+              );
+            }
+          })}
+        </ul>
+        <Link className="all-projects" to="/projects">
+          Ver proyectos
+        </Link>
+      </div>
     </section>
   );
 };
