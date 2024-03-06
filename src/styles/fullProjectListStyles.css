@@ -98,10 +98,17 @@
 /* Media query para tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .full-project-list h2 {
-    font-size: 4vw;
+    font-size: 6vw;
     margin: 20px 0 50px;
   }
 
+  .back {
+    display: none;
+  }
+}
+
+/* Media query para pantallas móviles */
+@media only screen and (max-width: 767px) {
   .back {
     display: none;
   }
