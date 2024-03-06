@@ -159,7 +159,7 @@
   .about-me {
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    height: 75vh;
+    height: 85vh;
   }
 
   .photo-name {
