@@ -120,29 +120,38 @@
 /* Media query para tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .project {
-    width: 320px;
-    height: 550px;
+    width: 600px;
+    height: 1000px;
   }
 
   .description h3 {
-    font-size: 1.2em;
+    font-size: 2.5em;
+  }
+
+  .description {
+    margin-bottom: 0;
   }
 
   .description > p {
-    font-size: 0.9em;
+    font-size: 2em;
   }
 
   .buttons > a > img {
-    width: 2em;
-    height: 2em;
+    width:4.5em;
+    height:4.5em;
+  }
+
+  .buttons > a > img:hover {
+    position: initial;
+    transform: none;
   }
 
   .project-stack {
-    gap: 30px;
+    gap: 50px;
   }
 
   .project-stack img {
-    height: 2em;
+    height: 4em;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
   }
 }
