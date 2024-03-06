@@ -159,7 +159,7 @@
   .about-me {
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    height: 70vh;
+    height: 90vh;
   }
 
   .photo-name {
@@ -189,7 +189,7 @@
   .about-me .description {
     justify-content: start;
     height: 90%;
-    margin-top: 8vh;
+    margin-top: 10px;
     font-size: 0.8em;
   }
 
@@ -199,12 +199,18 @@
 
   .name-job h2 {
     font-size: 4vw;
-    margin-bottom: 5vh;
+    margin-bottom: 40px;
+  }
+
+  .about-me .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 
   .about-me .bio p {
     text-align: justify;
-    font-size: 1.7vw;
+    font-size: 3vw;
   }
 
   .about-me .links {
@@ -212,9 +218,9 @@
     position: absolute;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 3vh;
-    top: 29vh;
-    right: 17vw;
+    gap: 15px;
+    top: 270px;
+    right: 16vw;
     width: calc(45vw - 50%);
   }
 
@@ -245,10 +251,10 @@
 /* Media query para pantallas móviles */
 @media only screen and (max-width: 767px) {
   .about-me {
-    height: 80vh;
+    height: 90vh;
     flex-direction: column;
     align-items: flex-start;
-    margin: 25px 0 0 25px;
+    margin: 75px 0 0 25px;
   }
 
   .photo-name {
@@ -261,23 +267,31 @@
 
   .name-job h2 {
     font-size: 4vw;
+    margin-bottom: 40px;
   }
 
   .about-me .description {
     font-size: 0.8em;
+    margin-top: 10px;
+  }
+
+  .about-me .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 
   .about-me .description p {
     width: 60vw;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 3vw;
   }
 
   .description .links {
     position: absolute;
     flex-direction: column-reverse;
     right: 5.5vw;
-    top: 10vh;
+    top: 175px;
     width: 20vw;
     gap: 40px;
   }

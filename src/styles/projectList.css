@@ -71,8 +71,8 @@
   .project-list > div {
     display: flex;
     position: absolute;
-    right: 16.5vw;
-    top: 49vh;
+    right: 15.5vw;
+    top: 475px;
     width: calc(45vw - 50%);
   }
 
@@ -96,7 +96,7 @@
   .project-list > div {
     display: flex;
     position: absolute;
-    top: 38vh;
+    top: 475px;
     right: 0.5vw;
     width: calc(80vw - 50%);
   }

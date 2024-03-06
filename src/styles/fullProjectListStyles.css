@@ -103,12 +103,6 @@
   }
 
   .back {
-    /* display: none; */
+    display: none;
   }
-}
-
-/* Media query para pantallas móviles */
-@media only screen and (max-width: 767px) {
-  /* Ajustes de diseño para pantallas móviles */
-  /* Puedes ajustar aquí los estilos específicos para pantallas móviles */
 }
