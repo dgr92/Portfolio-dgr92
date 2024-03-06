@@ -17,7 +17,7 @@ export const AboutMe = ({ userData }) => {
         </div>
         <div className='bio'>
           <p>
-            Apasionado de la tecnología, he trabajado con diversas tecnologías
+            He trabajado con diversas tecnologías
             desarrollando tanto en front-end como en back-end lo que me permite
             tener una visión completa dentro de cualquier proyecto. Mi bagaje
             profesional ha hecho que pueda desarrollar habilidades comunicativas

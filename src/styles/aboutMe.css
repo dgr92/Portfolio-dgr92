@@ -210,7 +210,7 @@
 
   .about-me .bio p {
     text-align: justify;
-    font-size: 3.1vw;
+    font-size: 3.3vw;
   }
 
   .about-me .links {
@@ -225,10 +225,11 @@
   }
 
   .cv {
-    padding: 10px 15px;
+    padding: 15px 30px;
     justify-self: center;
-    font-size: 1.5em;
-    width: 150px;
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 170px;
   }
 
   .external-links {
@@ -299,6 +300,7 @@
   .cv {
     width: 100px;
     text-align: center;
+    font-weight: bold;
     padding: 8px 15px;
     top: -10em;
     right: 0em;

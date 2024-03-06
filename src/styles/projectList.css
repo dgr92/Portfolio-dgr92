@@ -72,15 +72,16 @@
     display: flex;
     position: absolute;
     right: 15.5vw;
-    top: 525px;
+    top: 550px;
     width: calc(45vw - 50%);
   }
 
   .all-projects {
     position: absolute;
-    left: -95px;
-    width: 150px;
-    padding: 10px 15px;
+    font-size: 1.8em;
+    left: -120px;
+    width: 170px;
+    padding: 15px 30px;
   }
 }
 
