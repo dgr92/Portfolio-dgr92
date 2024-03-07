@@ -111,8 +111,7 @@
   }
 
   .stack h2 {
-    font-size: 3vw;
-    margin-bottom: 20px;
+    display: none;
   }
 
   .techs {

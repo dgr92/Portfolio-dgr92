@@ -210,7 +210,7 @@
 
   .about-me .bio p {
     text-align: justify;
-    font-size: 3.3vw;
+    font-size: 1.7vh;
   }
 
   .about-me .links {
@@ -252,14 +252,35 @@
 /* Media query para pantallas móviles */
 @media only screen and (max-width: 767px) {
   .about-me {
-    height: 90vh;
+    height: 75vh;
     flex-direction: column;
     align-items: flex-start;
     margin: 75px 0 0 25px;
   }
 
   .photo-name {
-    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .photo-name > img {
+    width: 25vw;
+    left: 2vh;
+  }
+
+  @keyframes slideInImg {
+    0% {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   .name-job h1 {
@@ -292,13 +313,13 @@
     position: absolute;
     flex-direction: column-reverse;
     right: 5.5vw;
-    top: 175px;
-    width: 20vw;
+    top: 120px;
+    width: 17vw;
     gap: 40px;
   }
 
   .cv {
-    width: 100px;
+    width: 60px;
     text-align: center;
     font-weight: bold;
     padding: 8px 15px;

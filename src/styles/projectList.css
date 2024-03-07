@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .all-projects {
   font-size: 1.3em;
   color: #e3e3e3;
@@ -97,16 +98,17 @@
   .project-list > div {
     display: flex;
     position: absolute;
-    top: 475px;
-    right: 0.5vw;
+    top: 440px;
+    right: -1vw;
     width: calc(80vw - 50%);
   }
-
+  
   .all-projects {
+    width: 60px;
     position: absolute;
-    width: 100px;
     padding: 8px 15px;
-    font-size: 1em;
+    font-size: 0.8em;
+    font-weight: bold;
     text-align: center;
   }
 }
