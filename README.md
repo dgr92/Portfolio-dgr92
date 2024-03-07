@@ -1,8 +1,19 @@
-# React + Vite
+# Portfolio David Graciá
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Este es mi portfolio personal donde muestro mis proyectos y habilidades como desarrollador. Aquí encontrarás una colección de mis trabajos, información sobre mí, la posibilidad de descargar mi cv y cómo contactarme.
 
-Currently, two official plugins are available:
+## Contenido
+- Contacto
+- Tecnologías
+- Proyectos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Contacto
+No dudes en contactarme a través de:
+
+- **Correo electrónico**: [davidgreq92@gmail.com](mailto:davidgreq92@gmail.com)
+- **LinkedIn**: [David Graciá](https://www.linkedin.com/in/david-gr/)
+- **Sitio Web**: [https://dgr92.vercel.app/](https://dgr92.vercel.app/)
+- **GitHub**: [dgr92](https://github.com/dgr92)
+
+¡Gracias por visitar mi portfolio!
