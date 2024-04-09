@@ -31,11 +31,16 @@ export const FullProjectList = () => {
       <div className="full-project-list">
         <h2>Proyectos</h2>
         <ul>
-          {profileData.map((repo) => (
-            <li className="a" key={repo.id}>
-              <Project repo={repo} />
-            </li>
-          ))}
+          {profileData.map((repo) => {
+            if (repo.name === 'dgr92') {
+              return;
+            }
+            return (
+              <li className="a" key={repo.id}>
+                <Project repo={repo} />
+              </li>
+            );
+          })}
         </ul>
       </div>
       <ReturnTopButton />

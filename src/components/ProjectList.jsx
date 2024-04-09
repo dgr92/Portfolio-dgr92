@@ -13,6 +13,9 @@ export const ProjectList = ({ userData }) => {
       <div>
         <ul>
           {userData.map((repo) => {
+            if (repo.name === 'dgr92') {
+              return;
+            }
             if (showingProjects > 0) {
               showingProjects--;
               return (
