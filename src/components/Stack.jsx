@@ -7,6 +7,7 @@ export const Stack = () => {
     'HTML',
     'CSS',
     'JavaScript',
+    'Python',
     'React',
     'React-Native',
     'NodeJS',
