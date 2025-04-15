@@ -11,21 +11,12 @@ export const Project = ({ repo }) => {
   return (
     <article className="project">
       <div className="project-content">
-        {repo.homepage ? (
-          <a href={repo.homepage} target="_blank" rel="noreferrer">
+          <a href={repo.homepage ? repo.homepage : repo.html_url} target="_blank" rel="noreferrer">
             <img
               src={`/resources/images/project-images/${repo.name.toLowerCase()}.png`}
               alt={`Imagen del proyecto ${projectName}`}
             />
           </a>
-        ) : (
-          <a href={repo.html_url} target="_blank" rel="noreferrer">
-            <img
-              src={`/resources/images/project-images/${repo.name.toLowerCase()}.png`}
-              alt={`Imagen del proyecto ${projectName}`}
-            />
-          </a>
-        )}
 
         <div className="description">
           <h3>{projectName}</h3>
