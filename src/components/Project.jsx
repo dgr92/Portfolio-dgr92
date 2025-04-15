@@ -6,7 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const Project = ({ repo }) => {
   const projectName = textFormat(repo.name);
-  const stack = repo.topics.reverse();
+  const stack = [...repo.topics].reverse();
 
   return (
     <article className="project">
@@ -33,11 +33,7 @@ export const Project = ({ repo }) => {
         </div>
 
         <div className="buttons">
-          <a
-            className="github-button"
-            href={repo.html_url}
-            rel="noreferrer"
-          >
+          <a className="github-button" href={repo.html_url} rel="noreferrer">
             <img src="/resources/images/icons/github.svg" alt="Logo GitHub" />
           </a>
 
@@ -50,11 +46,7 @@ export const Project = ({ repo }) => {
           </a>
 
           {repo.homepage ? (
-            <a
-              className="deploy-button"
-              href={repo.homepage}
-              rel="noreferrer"
-            >
+            <a className="deploy-button" href={repo.homepage} rel="noreferrer">
               <img src="/resources/images/icons/deploy.svg" alt="Logo deploy" />
             </a>
           ) : null}
