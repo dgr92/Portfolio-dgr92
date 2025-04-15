@@ -6,7 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const Project = ({ repo }) => {
   const projectName = textFormat(repo.name);
-  const stack = [...repo.topics].reverse();
+  const stack = [...repo.topics];
 
   return (
     <article className="project">
