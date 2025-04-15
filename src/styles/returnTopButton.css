@@ -26,14 +26,22 @@
   position: fixed;
   bottom: 35px;
   right: 30px;
-  opacity: 1;
-  animation: slideFromRight 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  transform: translateX(200%);
+}
+
+.go-top:not(.hidden) {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
 }
 
 .hidden {
-  animation: slideToRight 1s ease;
   opacity: 0;
+  transform: translateX(200%);
+  transition: all 0.3s ease-in-out;
 }
 
 .go-top > img {
